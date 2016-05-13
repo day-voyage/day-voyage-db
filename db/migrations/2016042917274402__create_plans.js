@@ -16,7 +16,7 @@ module.exports = (function() {
       return [
         this.createTable("plans",
           [{"name":"user_id","type":"int"},
-          // {"name":"activity_id","type":"int"},
+          {"name":"clientside_id", "type":"string"},
           {"name":"title","type":"string"},
           {"name":"desc","type":"string"},
           {"name":"likes","type":"int"}])

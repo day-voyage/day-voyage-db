@@ -28,6 +28,7 @@
       "columns": [
         {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
         {"name": "plan_id", "type": "int", "properties": {}},
+        {"name": "clientside_id", "type": "string", "properties": {}},
         {"name": "user_id", "type": "int", "properties": {}},
         {"name": "user_gen", "type": "boolean", "properties": {}},
         {"name": "private", "type": "boolean", "properties": {}},
@@ -56,6 +57,7 @@
       "columns": [
         {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
         {"name": "user_id", "type": "int", "properties": {}},
+        {"name": "clientside_id", "type": "string", "properties": {}},
         {"name": "title", "type": "string", "properties": {}},
         {"name": "desc", "type": "string", "properties": {}},
         {"name": "likes", "type": "int", "properties": {}},
