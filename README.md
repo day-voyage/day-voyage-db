@@ -51,17 +51,13 @@ nodal db:seed
 
 **GET**     get all activities (use query params to match attributes)
 
-
 **POST**   create activity
 
-
 **PUT**     update activity
-
 
 **DELETE**  delete  activity
 
 ###/v1/activities/{id}
-
 
 **GET**     get activity by id
 
@@ -143,7 +139,7 @@ title         --> string
 
 duration      --> int (expected length of time in minutes)
 
-costPerPerson --> int (expected cost per person of activity)
+price         --> int (expected cost per person of activity)
 
 isYelp        --> boolean (activity generated from yelp API call)
 

@@ -28,7 +28,7 @@ module.exports = (function() {
           {"name":"neighborhood","type":"json"},
           {"name":"title","type":"string"},
           {"name":"duration","type":"int"},
-          {"name":"costPerPerson", "type":"int"},
+          {"name":"price", "type":"int"},
           {"name": "isYelp", "type":"boolean"},
           {"name": "categories", "type": "json"}])
       ];
