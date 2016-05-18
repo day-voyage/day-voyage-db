@@ -50,14 +50,14 @@ module.exports = (function() {
   // TODO: automate writing the users into the db.json for seed
 
   class Activity {
-    constructor(plan_id, user_id, user_gen, priv, duration, isYelp, costPerPerson) {
+    constructor(plan_id, user_id, user_gen, priv, duration, isYelp, price) {
         this.plan_id = plan_id;
         this.user_id = user_id;
         this.user_gen = user_gen;
         this.private = priv;
         this.duration = duration;
-        this.isYelp = isYelp || true;
-        this.costPerPerson = costPerPerson;
+        this.isYelp = isYelp || false;
+        this.price = price;
     }
   }
 
@@ -85,15 +85,15 @@ module.exports = (function() {
     return JSON.stringify(activities.map((activity) => {
       var userId = Math.ceil(Math.random() * 10);
       var planId = Math.ceil(Math.random() * 5);
-      var costPerPerson = Math.ceil(Math.random() * 50);
-      let mockActivity = new Activity(planId, userId, bool[Math.round(Math.random())], bool[Math.round(Math.random())], 90, true, costPerPerson);
+      var price = Math.ceil(Math.random() * 50);
+      let mockActivity = new Activity(planId, userId, bool[Math.round(Math.random())], bool[Math.round(Math.random())], 90, false, price);
       Object.assign(mockActivity, activity);
       return mockActivity;
     }));
   };
 
   // console.log(JSON.parse((genActivities(transformedFromYelp))));
-  // console.log((genActivities(transformedFromYelp)));
+  console.log((genActivities(transformedFromYelp)));
 
 
   class Plan {
@@ -123,7 +123,7 @@ module.exports = (function() {
     return JSON.stringify(mockPlans);
   }
 
-  console.log(genPlans(5));
+  // console.log(genPlans(5));
 
   class Comment {
     constructor(content, user_id, activity_id, plan_id) {
