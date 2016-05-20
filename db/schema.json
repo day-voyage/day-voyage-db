@@ -44,6 +44,7 @@
         {"name": "price", "type": "int", "properties": {}},
         {"name": "isYelp", "type": "boolean", "properties": {}},
         {"name": "categories", "type": "json", "properties": {}},
+        {"name": "index", "type": "int", "properties": {}},
         {"name": "created_at", "type": "datetime", "properties": {}},
         {"name": "updated_at", "type": "datetime", "properties": {}}
       ]

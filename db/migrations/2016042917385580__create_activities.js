@@ -30,7 +30,8 @@ module.exports = (function() {
           {"name":"duration","type":"int"},
           {"name":"price", "type":"int"},
           {"name": "isYelp", "type":"boolean"},
-          {"name": "categories", "type": "json"}])
+          {"name": "categories", "type": "json"},
+          {"name": "index", "type":"int"}])
       ];
 
     }
