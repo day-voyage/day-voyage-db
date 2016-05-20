@@ -92,24 +92,24 @@ module.exports = (function() {
 
         this.params.body.user_id = user.get('id');
 
-        let activities = this.params.body.activities;
-        console.log(activities);
+        // let activities = this.params.body.activities;
+        // console.log(activities);
 
-        delete this.params.body.activities;
+        // delete this.params.body.activities;
 
         Plan.create(this.params.body, (err, model) => {
 
-          let updatedActivities = activities.map((activity, i) => {
+          // let updatedActivities = activities.map((activity, i) => {
 
-            let updates = Object.assign({}, activity, {plan_id: model.get('id')});
+          //   let updates = Object.assign({}, activity, {plan_id: model.get('id')});
 
-            return Activity
-              .update(activity.id, updates, (err, activity) => {
-                if (err) {console.log('error updating activity:', err)}
-              });
-          });
+          //   return Activity
+          //     .update(activity.id, updates, (err, activity) => {
+          //       if (err) {console.log('error updating activity:', err)}
+          //     });
+          // });
 
-          model.set('activities', updatedActivities)
+          // model.set('activities', updatedActivities)
           this.respond(err || model);
 
         });
