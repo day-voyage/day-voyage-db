@@ -1,6 +1,6 @@
 # An API built with Nodal and Postgres
 
-This repo is intended for use as an API to power [Good Times](https://github.com/sweaty-figs).
+This repo is intended for use as an API to power [Day Voyage](https://github.com/sweaty-figs/day-voyage).
 
 1. [GettingStarted](#gettingstarted)
 2. [Requirements](#requirements)
